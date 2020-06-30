@@ -56,8 +56,8 @@ describe('Protractor baby steps', function() {
     
 
 
-element(by.id("userId")).sendKeys("r6a6j6");
-element(by.id("pwd")).sendKeys("pragadeesh").then(function()
+element(by.id("userId")).sendKeys("");
+element(by.id("pwd")).sendKeys("").then(function()
 {
   browser.wait(EC.urlContains("irctc.co.in/nget/booking/psgninput"),20000);
 
